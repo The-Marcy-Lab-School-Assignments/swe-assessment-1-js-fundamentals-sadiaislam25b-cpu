@@ -14,49 +14,72 @@
 // ============================================
 
 const petJudger = (petBreed, petName) => {
-  // Your code here
-};
+  function isGoodBreed(breed) {
+    const goodBreeds = ['dog', 'cat', 'turtle', 'snake'];
+    return goodBreeds.includes(breed.toLowerCase());
+  }
 
-// ============================================
-// Question 2: loopFromOneUpToAnother
-// ============================================
+  if (isGoodBreed(dog)) {
+    return `${petName} I love dongs!`;
+    if (isGoodBreed(cat)) {
+      return `${petName} I love cats!`;
+      if (isGoodBreed(turtle)) {
+        return `${petName} I love turtles!`;
+        if (isGoodBreed(snake)) {
+          return `${petName} I love snakes!`;
+        } else {
+          return `${petName} I am not a fan of ${petBreed}s.`;
+        }
+      };
 
-const loopFromOneUpToAnother = (firstNum, secondNum) => {
-  // Your code here
-};
+      // ============================================
+      // Question 2: loopFromOneUpToAnother
+      // ============================================
 
-// ============================================
-// Question 3: shoutEveryLetterForLoop
-// ============================================
+      const loopFromOneUpToAnother = (firstNum, secondNum) => {
+        let result = [];
+        for (let i = firstNum; i <= secondNum; i++) {
+          result.push(i);
+        }
+        return result;
+      };
 
-const shoutEveryLetterForLoop = (str) => {
-  // Your code here
-};
+      // ============================================
+      // Question 3: shoutEveryLetterForLoop
+      // ============================================
 
-// ============================================
-// Question 4: letterCaseCounts
-// ============================================
+      const shoutEveryLetterForLoop = (str) => {
+        let result = '';
+        for (let i = 0; i < str.length; i++) {
+          result += str[i].toUpperCase() + '!';
+        }
+        return result;
+      };
 
-const letterCaseCounts = (str) => {
-  // Your code here
-};
+      // ============================================
+      // Question 4: letterCaseCounts
+      // ============================================
 
-// ============================================
-// Question 5: getNamesOfGreedyGnomes
-// ============================================
+      const letterCaseCounts = (str) => {
+        let counts = { uppercase: 0, lowercase: 0, neither: 0 };
+      };
 
-const getNamesOfGreedyGnomes = (gnomes) => {
-  // Your code here
-};
+      // ============================================
+      // Question 5: getNamesOfGreedyGnomes
+      // ============================================
 
-// ============================================
-// Exports
-// ============================================
+      const getNamesOfGreedyGnomes = (gnomes) => {
+        let greedyGnomeNames = [];
+      };
 
-module.exports = {
-  petJudger,
-  loopFromOneUpToAnother,
-  shoutEveryLetterForLoop,
-  letterCaseCounts,
-  getNamesOfGreedyGnomes,
-};
+      // ============================================
+      // Exports
+      // ============================================
+
+      module.exports = {
+        petJudger,
+        loopFromOneUpToAnother,
+        shoutEveryLetterForLoop,
+        letterCaseCounts,
+        getNamesOfGreedyGnomes,
+      };
