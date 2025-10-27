@@ -6,7 +6,10 @@ Write your responses directly in this file. Follow markdown formatting guideline
 
 ## Section 1: Short Response
 
+
 ### Question 1
+<!-- This is correct, but for this response we were looking for you to describe why declaring `currentStatus` inside the curly braces caused this bug. Specifically looking for  use of the term **block-scope** and what that has to do with this particular variable. Additionally, you should use markdown to format code snippets.  -->
+
 The kind of error it throws is Reference Error. 
 It is thrown because currentStatus is only creted inside the let and eals blocks 
 I removed let from if and else statement, and add them in 3rd line 
@@ -25,9 +28,14 @@ const react = (isReuben) => {
 react(true);
 
 ### Question 2
+<!-- This explanation would have been more technically accurate if the term "pass by reference" was used to describe the behavior of why the `name` key mutated for both variables `bestPlayer` and `theGOAT`. 
+ 
+What is the correlation between objects, and the behavior of "passing by reference"? How is that being shown in this code?  -->
 Micheal Jordan
 Because bestplayer and thegoat poit to the same object so if we change best player name it will also change the Goat.name 
 ### Question 3
+<!--  This is true. To make this even better and more accurate, name the **two different scopes** each variable is in, and how that affects what version of `theHustler` variable is printed. Does it only have to do with where the variables are? Or does it also have to do with where the console.logs are? 
+-->
 
 Paul is the hardest working person in the room
 Laisha is also the hardest working person in the room
@@ -50,6 +58,7 @@ sum(100, 200, 800, 1, 1, 1); // 1103;
 
 
 ### Question 5
+<!-- This is great overall description of scope, what would make this better is to explain what are the different scopes, like block-scope, global scope, function scope and providing an analogy to explain these differences. -->
 
 The definition of scope is the accessibility of variables, functions, and other identifiers in a program. It determines where a specific code can access and use these declared elements.
 Variables declared with "var" inside a function are only accessible within that function.
@@ -81,5 +90,5 @@ module.exports = { add };
 
 
 ### Question 8
-
+<!-- This is great but you are missing a code example -->
 The data type(s) I would use to represent a single item in the cart is an object because it item has properties (name, price, and quantity), which are best stored as key-value pairs. The whole shopping cart can be an array of these objects, so it can hold multiple items.

@@ -11,6 +11,13 @@
 
 // ============================================
 // Question 1: petJudger
+/*
+- each one of these if conditionals needs a closing curly brace
+- You don't need to write a new function within the petJudger function
+- You need to use the petBreed argument within the function petJudger.
+- Use else if or check multiple animals(petBreed) separately:
+
+*/
 // ============================================
 
 const petJudger = (petBreed, petName) => {
@@ -46,7 +53,9 @@ const petJudger = (petBreed, petName) => {
 
       // ============================================
       // Question 3: shoutEveryLetterForLoop
-      // ============================================
+      /*
+      - This solution is very close, but this function exected for each caharcter to be logged to the console sperately. Here you are adding each character to a string. 
+      */ ============================================
 
       const shoutEveryLetterForLoop = (str) => {
         let result = '';
